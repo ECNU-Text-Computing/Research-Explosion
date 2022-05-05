@@ -6,7 +6,7 @@
 
 ## Explore MAG
 
-![image](https://github.com/ECNU-Text-Computing/Research-Explosion/blob/main/imgs/data_explore.png)
+![Flow of Data Exploration](https://github.com/ECNU-Text-Computing/Research-Explosion/blob/main/imgs/imgs_mag.png)
 
 1. Download original MAG dataset into *Dataset/*.
 2. Follow the order of the first part in *run.sh*. The tmp_files are saved in *Tmp_MAG/*.
