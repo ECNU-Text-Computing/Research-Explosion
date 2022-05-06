@@ -6,24 +6,25 @@
 
 ## Explore MAG
 
-![Flow of Data Exploration](https://github.com/ECNU-Text-Computing/Research-Explosion/blob/main/imgs/imgs_mag.png)
+1. Download original MAG dataset into **Dataset/**. Especially, you should make sure there are 
+   **Dataset/mag/PaperReferences.txt**, **Dataset/mag/Papers.txt**, <br>
+   **Dataset/advanced/FieldOfStudyChildren.txt**, **Dataset/advanced/FieldsOfStudy.txt** and **Dataset/advanced/PaperFieldsOfStudy.txt**.
+2. Follow the order of the first part in **run.sh**. All tmp_files are saved in **Tmp_MAG/**.
+3. The following figure presents the flow of the functions and datas.
 
-1. Download original MAG dataset into *Dataset/*.
-2. Follow the order of the first part in *run.sh*. The tmp_files are saved in *Tmp_MAG/*.
-3. Note that not all generated tmp_files are used in final analysis.
+![Flow of Data Exploration](https://github.com/ECNU-Text-Computing/Research-Explosion/blob/main/imgs/imgs_mag.png)
 
 ## Regression MAG
 
-1. Make sure you have 21 files in *Tmp_MAG/paper_features/*
-2. Follow the order of the second part in *run.sh*.
+1. Make sure you have 21 files in **Tmp_MAG/paper_features/\*.txt**.
+2. Follow the order of the second part in **run.sh**.
 
 ## Plot MAG
 
-1. Make sure you have *year_count_accum.json* and *cit_fos_year_count.json* or *count/* in *Tmp_MAG/*,
-   and then run the first two scripts in the third part.
-2. Make sure you have *fos_ref_num/*, *fos_ref_age/*, and *fos_ref_stata/* in *Tmp_MAG/*, 
-   and then run the third script in the third part.
-3. Make sure you have *fos_ref_cit_features/* in *Tmp_MAG*,
-   and then run the forth script in the third part.
-4. Run the last two scripts in the third part.
-5. Use Gephi to plot the cluster based on node.xlsx and relation.xlsx.
+1. Make sure you have **Tmp_MAG/cluster/node.xlsx** and **Tmp_MAG/cluster/relation.xlsx**. 
+   And then use Gephi to plot the clusters of all fields of study.
+2. Make sure you have **Tmp_MAG/year_count_accum.json**, <br>
+   **Tmp_MAG/count/#fos_1_cit_year_count.json**, **Tmp_MAG/count/#fos_1_cit_count.json**, <br>
+   **Tmp_MAG/fos_ref_num/\*.json**, **Tmp_MAG/fos_ref_age/\*.json**, **Tmp_MAG/fos_ref_stata/\*.json**, <br>
+   and **Tmp_MAG/fos_ref_cit_features/\*.json**, <br>
+   and then run scripts in the third part.
